@@ -1,0 +1,20 @@
+{% extends "core/base.html" %}
+
+{% block page_header %}Properties Near You{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+	<div class="col">
+		<form action="." method="get"> 
+			{{ form.as_p }}
+			<input type="submit" value="Find properties."/>
+		</form>
+	</div>
+	<div class="col">
+		 <div class="col">
+        {% for i in result %}
+            <p>{{ i.address }} - {{ i.prop_type }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

@@ -2,39 +2,39 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{% static 'bootstrap-4.0.0/css/bootstrap.min.css' %}">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'bootstrap-4.0.0/css/bootstrap.min.css' %}">
 
-        <title>{% block page_title %}Elegant Props{% endblock page_title %}</title>
-    </head>
+		<title>{% block page_title %}Elegant Props{% endblock page_title %}</title>
+	</head>
 
-    <body>
+	<body>
 
-        <!-- Outer container for any page that extends this template. -->
-        <div class="container">
-            <!-- Page heading block -->
-            <div class="row">
-                <div class="col-md-10 offset-md-1 text-center">
-                    <h1>{% block page_header %}Page header goes here...{% endblock page_header %}</h1>
-                </div>
-            </div>
+		<!-- Outer container for any page that extends this template. -->
+		<div class="container">
+			<!-- Page heading block -->
+			<div class="row">
+				<div class="col-md-10 offset-md-1 text-center">
+					<h1>{% block page_header %}Page header goes here...{% endblock page_header %}</h1>
+				</div>
+			</div>
 
-            <!-- Main content block -->
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                {% block content %}Probably want to put some content in this block.{% endblock content %}
-                </div>
-            </div>
-        </div>
-        
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-        <script src="{% static 'js/popper.min.js' %}"></script>
-        <script src="{% static 'bootstrap-4.0.0/js/bootstrap.bundle.min.js' %}"></script>
-    </body>
+			<!-- Main content block -->
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+				{% block content %}Probably want to put some content in this block.{% endblock content %}
+				</div>
+			</div>
+		</div>
+		
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+		<script src="{% static 'js/popper.min.js' %}"></script>
+		<script src="{% static 'bootstrap-4.0.0/js/bootstrap.bundle.min.js' %}"></script>
+	</body>
 </html>

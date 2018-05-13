@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+
+{% block page_header %}Lookup Properties{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+	<div class="col">
+		<form action="." method="get"> 
+			{{ form.as_p }}
+			<input type="submit" value="Find the property"/>
+		</form>
+	</div>
+	<div class="col">
+		{% for r in result %}
+            <p>{{ i.address }} - {{ i.prop_type }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

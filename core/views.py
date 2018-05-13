@@ -6,8 +6,7 @@ from django.views import generic
 
 
 class HomeView(generic.TemplateView):
-    template_name = 'core/home.html'
+	template_name = 'core/home.html'
 
 class SamplePageView(generic.TemplateView):
-    template_name = 'core/sample.html'
-
+	template_name = 'core/sample.html'
